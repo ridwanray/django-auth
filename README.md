@@ -7,7 +7,6 @@ Authentication & Authourization built with Django
 - Celery: Task scheduling
 - Flower: Task monitoring
 - Redis: Celery broker
-- SQLite: Relational DB
 - Code Formatter: Black
 
 # Features
