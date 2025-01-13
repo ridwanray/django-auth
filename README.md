@@ -9,6 +9,8 @@ Authentication & Authourization built with Django
 - Redis: Celery broker
 - Code Formatter: Black
 
+Python version used 3.10
+
 # Features
 
 - Login
