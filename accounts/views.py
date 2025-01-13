@@ -63,7 +63,7 @@ def register(request: HttpRequest):
                     "created_at": datetime.now(timezone.utc)
                 }
             )
-            send_email(
+            send_email.delay(
                 "Verify Your Account",
                 [cleaned_email],
                 "emails/email_verification_template.html",
@@ -115,7 +115,7 @@ def send_password_reset_link(request: HttpRequest):
                 "email":email.lower(),
                 "token": token.token
             }
-            send_email(
+            send_email.delay(
                 "Your Password Reset Link",
                 [email],
                 "emails/password_reset_template.html",

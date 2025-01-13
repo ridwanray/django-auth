@@ -84,5 +84,5 @@ pytest -v -rA
 
 
 # Flower dashboard
-![Screenshot](flower.png)
+![Screenshot](screenshots/flower.png)
 
