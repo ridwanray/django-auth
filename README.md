@@ -6,7 +6,7 @@ Authentication & Authourization built with Django
 - Pytest: Testing Framework
 - Celery: Task scheduling
 - Flower: Task monitoring
-- RabbitMQ: Celery broker
+- Redis: Celery broker
 - SQLite: Relational DB
 - Code Formatter: Black
 
@@ -15,7 +15,7 @@ Authentication & Authourization built with Django
 - Login
 - Register
 - Account verification
-- Passwordreset
+- Password reset
 - Sending email
 
 # Running locally
@@ -47,11 +47,11 @@ python manage.py runserver
 
 Celery worker
 ```
-celery -A easyjobs worker --loglevel=info
+celery -A talent_base worker --loglevel=info
 ```
 Flower dashboard
 ```
-celery -A easyjobs flower --ports=5555
+celery -A talent_base flower --ports=5555
 ```
 
 
@@ -81,10 +81,6 @@ pytest -v -rA
 
 # Home
 ![Screenshot](screenshots/home.png)
-
-# My Application
-![Screenshot](screenshots/my-applications.png)
-
 
 
 # Flower dashboard
