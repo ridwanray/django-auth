@@ -54,7 +54,6 @@ Flower dashboard
 celery -A talent_base flower --ports=5555
 ```
 
-
 # Run tests
 
 Run tests in an activated virtualenv using:
