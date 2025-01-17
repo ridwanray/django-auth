@@ -1,8 +1,7 @@
-venv/
+.env
+venv
 .history/
 __pycache__/
 .vscode/
-.env
 *.sqlite3
 media/
-celerybeat-schedule
